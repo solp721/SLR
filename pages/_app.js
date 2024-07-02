@@ -1,5 +1,10 @@
-import "@/styles/globals.css";
+import PromotionLayout from '@/layouts/PromotionLayout';
+import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+	return (
+		<PromotionLayout>
+			<Component {...pageProps} />
+		</PromotionLayout>
+	);
 }
