@@ -4,10 +4,10 @@ import styles from './MainPage.module.css';
 import Slide from '@/components/Slide/Slide';
 import Banner from '@/components/Slide/Banner';
 import Card from '@/components/Card/Card';
-import ShareUniversity from '@/components/Copyright/ShareUniversity';
-import Footer from '@/components/Copyright/Footer';
+import { fetchLectures } from '@/api/lectures/get/LecturesGet';
 
 export default function MainLecturePage({ lectures }) {
+	console.log(lectures);
 	return (
 		<div className={styles.mainContainer}>
 			<Slide />
@@ -22,10 +22,7 @@ MainLecturePage.getLayout = page => {
 };
 
 export async function getServerSideProps() {
-	const res = await fetch(process.env.NEXT_PUBLIC_LECTURE_API_URL);
-	const json = await res.json();
-	const lectures = json.data?.data || [];
-
+	const { lectures } = await fetchLectures();
 	return {
 		props: {
 			lectures,
