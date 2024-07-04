@@ -15,11 +15,13 @@ export default function MainLayout({ children }) {
 						src={logo1}
 						className={`${styles.logo} ${styles.logo1}`}
 						alt="logo1"
+						priority
 					/>
 					<Image
 						src={logo2}
 						className={`${styles.logo} ${styles.logo2}`}
 						alt="logo2"
+						priority
 					/>
 				</div>
 				<div className={styles.headerCenterUniversity}>
@@ -41,7 +43,6 @@ export default function MainLayout({ children }) {
 					</div>
 				</div>
 			</nav>
-			<Slide></Slide>
 			<div>{children}</div>
 		</div>
 	);

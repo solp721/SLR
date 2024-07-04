@@ -9,7 +9,7 @@ export default function PromotionLayout({ children }) {
 		<div className={styles.rootLayout}>
 			<nav className={styles.topNavBar}>
 				<div className={styles.headerLeftLogo}>
-					<Image src={logo1} className={styles.logo1} alt="logo1" />
+					<Image src={logo1} className={styles.logo1} alt="logo1" priority />
 				</div>
 				<div className={styles.headerCenterUniversity}>
 					<h2>부산대학</h2>

@@ -1,0 +1,142 @@
+.wrapper {
+  margin: 1em auto;
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__left h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header__center {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formLabel {
+  margin-right: 5px;
+}
+
+.departmentSelect,
+.gradeSelect,
+.categorySelect {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.searchButton {
+  padding: 8px 15px;
+  background-color: #4d49a7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.searchButton:hover {
+  background-color: #3a37a1;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.rightBtn {
+  width: 100px;
+  padding: 8px 15px;
+  text-align: center;
+  border: none;
+  background-color: #4d49a7;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.rightBtn:hover {
+  background-color:#3a37a1;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 20px;
+  width: 20%; 
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.card p {
+  margin: 0.5em 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 10px); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 10px); 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: calc(100% - 10px); 
+  }
+}

@@ -54,6 +54,26 @@ const MainPromotionPage = () => {
 			<div id="section0" ref={sectionRefs.section0}>
 				<PromotionSection1 />
 			</div>
+			<div id="section0" ref={sectionRefs.section0}>
+				<PromotionSection1 />
+			</div>
+			<div class={styles.arrow}>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="2.4em"
+					height="2.4em"
+					color="#ffffff"
+					viewBox="0 0 24 24"
+				>
+					<path
+						fill="currentColor"
+						d="M11 19.5V7.914l-4.5 4.5L5.086 11L12 4.086L18.914 11L17.5 12.414l-4.5-4.5V19.5z"
+					/>
+				</svg>
+			</div>
+			<div id="section1" ref={sectionRefs.section1}>
+				<PromotionSection2 />
+			</div>
 			<div id="section1" ref={sectionRefs.section1}>
 				<PromotionSection2 />
 			</div>

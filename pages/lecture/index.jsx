@@ -1,12 +1,16 @@
 import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
-import Slide from '@/components/Slide/Slide';
 import styles from './MainPage.module.css';
+import Slide from '@/components/Slide/Slide';
+import Banner from '@/components/Slide/Banner';
+import Card from '@/components/Card/Card';
 
 export default function MainLecturePage() {
 	return (
 		<div className={styles.mainContainer}>
-			<h1>ㅎㅇㅎㅇ</h1>
+			<Slide></Slide>
+			<Banner></Banner>
+			<Card></Card>
 		</div>
 	);
 }
