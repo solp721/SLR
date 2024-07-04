@@ -1,0 +1,22 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 360px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+}

@@ -1,15 +1,26 @@
 import React from 'react';
-import styles from './styles/promotion.module.css';
-import Image from 'next/image';
-import logo1 from '../public/assets/logo/logo2.png';
+import styles from './styles/main.module.css';
+import logo1 from '../public/assets/logo/logo1.png';
+import logo2 from '../public/assets/logo/logo2.png';
 import Link from 'next/link';
+import Image from 'next/image';
+import Slide from '@/components/Slide/Slide';
 
-export default function PromotionLayout({ children }) {
+export default function MainLayout({ children }) {
 	return (
 		<div className={styles.rootLayout}>
 			<nav className={styles.topNavBar}>
 				<div className={styles.headerLeftLogo}>
-					<Image src={logo1} className={styles.logo1} alt="logo1" />
+					<Image
+						src={logo1}
+						className={`${styles.logo} ${styles.logo1}`}
+						alt="logo1"
+					/>
+					<Image
+						src={logo2}
+						className={`${styles.logo} ${styles.logo2}`}
+						alt="logo2"
+					/>
 				</div>
 				<div className={styles.headerCenterUniversity}>
 					<h2>부산대학</h2>
@@ -30,6 +41,7 @@ export default function PromotionLayout({ children }) {
 					</div>
 				</div>
 			</nav>
+			<Slide></Slide>
 			<div>{children}</div>
 		</div>
 	);

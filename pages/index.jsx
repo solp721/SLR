@@ -5,8 +5,9 @@ import PromotionSection2 from '@/components/PromotionSection/PromotionSection2';
 import PromotionSection3 from '@/components/PromotionSection/PromotionSection3';
 import ShareUniversity from '@/components/Copyright/ShareUniversity';
 import Footer from '@/components/Copyright/Footer';
+import PromotionLayout from '@/layouts/PromotionLayout';
 
-export default function MainPromotionPage() {
+const MainPromotionPage = () => {
 	const [currentImage, setCurrentImage] = useState(0);
 	const images = [
 		'/assets/backgroundimg/background1.jpg',
@@ -69,4 +70,10 @@ export default function MainPromotionPage() {
 			</div>
 		</div>
 	);
-}
+};
+
+MainPromotionPage.getLayout = page => {
+	return <PromotionLayout>{page}</PromotionLayout>;
+};
+
+export default MainPromotionPage;
