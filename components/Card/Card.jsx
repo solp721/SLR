@@ -1,46 +1,7 @@
 import React from 'react';
 import styles from './styles/card.module.css';
 
-const dummyData = [
-	{
-		subject: '교과목1',
-		category: '전공필수',
-		professor: '교수1',
-		rating: '4.5',
-	},
-	{
-		subject: '교과목2',
-		category: '전공선택',
-		professor: '교수2',
-		rating: '3.8',
-	},
-	{
-		subject: '교과목3',
-		category: '교양필수',
-		professor: '교수3',
-		rating: '4.2',
-	},
-	{
-		subject: '교과목4',
-		category: '교양선택',
-		professor: '교수4',
-		rating: '3.9',
-	},
-	{
-		subject: '교과목5',
-		category: '전공필수',
-		professor: '교수5',
-		rating: '4.0',
-	},
-	{
-		subject: '교과목6',
-		category: '전공선택',
-		professor: '교수6',
-		rating: '4.3',
-	},
-];
-
-export default function Card() {
+export default function Card({ lectures }) {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.header}>
@@ -71,14 +32,15 @@ export default function Card() {
 				</div>
 			</div>
 			<div className={styles.cards}>
-				{dummyData.map((item, index) => (
-					<div key={index} className={styles.card}>
-						<h2>{item.subject}</h2>
-						<p>이수구분: {item.category}</p>
-						<p>교수이름: {item.professor}</p>
-						<p>별점: {item.rating}</p>
-					</div>
-				))}
+				{lectures &&
+					lectures.map((lecture, index) => (
+						<div key={index} className={styles.card}>
+							<h2>{lecture.lectureName}</h2>
+							<p>이수구분: {lecture.lectureType}</p>
+							<p>교수이름: {lecture.professor}</p>
+							<p>별점: {lecture.averageStarLating}</p>
+						</div>
+					))}
 			</div>
 		</div>
 	);
