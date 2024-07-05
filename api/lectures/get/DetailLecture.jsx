@@ -8,11 +8,11 @@ export async function fetchLecture(lectureId) {
 			const lecture = json.data;
 			return { lecture };
 		} else {
-			console.error('!!!', `${res.status}`);
+			console.error(`Failed to fetch lecture, status code: ${res.status}`);
 			return { lecture: null };
 		}
 	} catch (error) {
-		console.error('!!!', error);
+		console.error('An error occurred while fetching the lecture:', error);
 		return { lecture: null };
 	}
 }

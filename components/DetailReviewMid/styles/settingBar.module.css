@@ -1,0 +1,160 @@
+.reviewWrapper {
+  margin: 1em auto;
+  width: 80%;
+  max-width: 87.5rem;
+  min-width: 37.5rem; 
+  background-color: #fff;
+  box-shadow: 0 0 0.3125rem 0 rgba(0, 0, 0, 0.06); 
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem; 
+  border-bottom: 0.0625rem solid #e0e0e0; 
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerLeft h1 {
+  margin: 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+}
+
+.headerTitle {
+  margin-top: 0.625rem; /* 10px */
+  font-size: 1rem; /* 16px */
+  color: #888;
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 18.75rem; /* 300px */
+  margin-top: 1.25rem; /* 20px */
+}
+
+.headerInfo p {
+  margin: 0;
+  font-size: 0.875rem; /* 14px */
+  color: #666;
+}
+
+.headerInfo .averageStars {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  display: inline-block;
+}
+
+.headerInfo .totalReviews {
+  font-size: 0.875rem; /* 14px */
+  display: inline-block;
+}
+
+.headerCenter {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  margin-right: 6.25rem; /* 100px */
+}
+
+.headerCenter input[type="checkbox"] {
+  margin-right: 0.625rem; /* 10px */
+}
+
+.headerRight {
+  display: flex;
+  align-items: flex-end;
+}
+
+.reviewBtn {
+  margin-top: 0.625rem; /* 10px */
+  display: inline-block;
+  background-color: #4d49a7;
+  color: #fff;
+  border-radius: 0.75rem; /* 12px */
+  border: none;
+  padding: 0.625rem 0.9375rem; /* 10px 15px */
+  font-size: 0.875rem; /* 14px */
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reviewBtn:hover {
+  background-color: #3a37a1;
+}
+
+.reviewBtn:active {
+  background-color: #3a37a1;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starRating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.star {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.starSelected {
+  font-size: 30px;
+  cursor: pointer;
+  color: gold;
+}
+
+.textArea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

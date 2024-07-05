@@ -9,10 +9,19 @@ const nextConfig = {
 				port: '',
 				pathname: '/**',
 			},
+			{
+				protocol: 'https',
+				hostname: 'cdn.aitimes.com',
+				port: '',
+				pathname: '/**',
+			},
+			{
+				protocol: 'https',
+				hostname: 'raw.githubusercontent.com',
+				port: '',
+				pathname: '/**',
+			},
 		],
-	},
-	env: {
-		NEXT_PUBLIC_LECTURE_API_URL: process.env.NEXT_PUBLIC_LECTURE_API_URL,
 	},
 };
 

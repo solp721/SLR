@@ -3,6 +3,13 @@ import styles from './MainPromotionPage.module.css';
 import PromotionSection1 from '@/components/PromotionSection/PromotionSection1';
 import PromotionSection2 from '@/components/PromotionSection/PromotionSection2';
 import PromotionSection3 from '@/components/PromotionSection/PromotionSection3';
+import PromotionSection4 from '@/components/PromotionSection/PromotionSection4';
+import PromotionSection5 from '@/components/PromotionSection/PromotionSection5';
+import PromotionSection6 from '@/components/PromotionSection/PromotionSection6';
+import PromotionSection7 from '@/components/PromotionSection/PromotionSection7';
+import PromotionSection8 from '@/components/PromotionSection/PromotionSection8';
+import PromotionSection9 from '@/components/PromotionSection/PromotionSection9';
+import PromotionSection10 from '@/components/PromotionSection/PromotionSection10';
 import ShareUniversity from '@/components/Copyright/ShareUniversity';
 import Footer from '@/components/Copyright/Footer';
 import PromotionLayout from '@/layouts/PromotionLayout';
@@ -69,17 +76,34 @@ const MainPromotionPage = () => {
 				</svg>
 			</div>
 			<div id="section1" ref={sectionRefs.section1}>
+				<PromotionSection4 />
+			</div>
+			<div id="section1" ref={sectionRefs.section1}>
+				<PromotionSection5 />
+			</div>
+			<div id="section1" ref={sectionRefs.section1}>
+				<PromotionSection6 />
+			</div>
+			<div id="section1" ref={sectionRefs.section1}>
 				<PromotionSection2 />
 			</div>
 			<div id="section2" ref={sectionRefs.section2}>
 				<PromotionSection3 />
 			</div>
+			<div id="section1" ref={sectionRefs.section1}>
+				<PromotionSection7 />
+			</div>
+			<div id="section1" ref={sectionRefs.section1}>
+				<PromotionSection8 />
+			</div>
+			<div id="section1" ref={sectionRefs.section1}>
+				<PromotionSection9 />
+			</div>
+			<div id="section1" ref={sectionRefs.section1}>
+				<PromotionSection10 />
+			</div>
 			<ShareUniversity />
-			<div
-				id="section3"
-				ref={sectionRefs.section3}
-				className={styles.footerContainer}
-			>
+			<div>
 				<Footer />
 			</div>
 		</div>
