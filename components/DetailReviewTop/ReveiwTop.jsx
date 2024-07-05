@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles/ReviewTop.module.css';
 import Image from 'next/image';
-import prof from '@/public/assets/prof/vector.png';
+import gara from '@/public/assets/image.png';
 
 export default function ReviewTop({ review, detailLecture }) {
 	return (
@@ -15,8 +15,8 @@ export default function ReviewTop({ review, detailLecture }) {
 						<Image
 							src={detailLecture.imageUrl}
 							alt={detailLecture.lectureName}
-							width={300}
-							height={200}
+							width={200}
+							height={150}
 						/>
 					</div>
 					<div>
@@ -28,7 +28,9 @@ export default function ReviewTop({ review, detailLecture }) {
 						<h3>{detailLecture.introduction}</h3>
 					</div>
 				</div>
-				<div className={styles.topRightContainer}></div>
+				<div className={styles.topRightContainer}>
+					<Image src={gara} alt="bara" width={600} height={300} />
+				</div>
 			</div>
 		</div>
 	);

@@ -33,23 +33,13 @@ export default function PromotionSection3() {
 									<TbCircleNumber2Filled size={50} />
 								</span>
 								<div className={styles.content}>
-									<h2>선택한 수업에 대한 리뷰들은 최신순으로 정렬되며,</h2>
-									<h2>최상단에 좋아요를 많이 받은 리뷰 TOP 4가</h2>
-									<h2>우선 배치되어 있어요.</h2>
-								</div>
-							</div>
-							<div className={styles.iconContainer}>
-								<span style={iconStyle}>
-									<TbCircleNumber3Filled size={50} />
-								</span>
-								<div className={styles.content}>
 									<h2>KorBERT를 활용한 키워드 분석을 통해</h2>
 									<h2>수업 리뷰의 주요 키워드를 시각화해서 보여줘요.</h2>
 								</div>
 							</div>
 							<div className={styles.iconContainer}>
 								<span style={iconStyle}>
-									<TbCircleNumber4Filled size={50} />
+									<TbCircleNumber3Filled size={50} />
 								</span>
 								<div className={styles.content}>
 									<h2>선택한 수업을 진행한 교수님이 진행하는</h2>

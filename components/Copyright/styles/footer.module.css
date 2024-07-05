@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    box-shadow: 0px 10px 20px 0px #babecc;
 }
 
 .mainTitle{
@@ -50,6 +49,7 @@
     border-radius: 10px;
     border: 1px solid  #D7D7D7;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .card img {
@@ -73,3 +73,9 @@
     height: 20%;
     background-color: #31343D;
 } */
+
+.test2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

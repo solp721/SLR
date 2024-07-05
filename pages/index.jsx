@@ -19,6 +19,9 @@ const MainPromotionPage = () => {
 	const images = [
 		'/assets/backgroundimg/background1.jpg',
 		'/assets/backgroundimg/background2.jpg',
+		'/assets/backgroundimg/background3.jpg',
+		'/assets/backgroundimg/background4.jpg',
+		'/assets/backgroundimg/background5.jpg',
 	];
 
 	const sectionRefs = {
@@ -50,14 +53,14 @@ const MainPromotionPage = () => {
 			className={styles.mainContainer}
 			style={{ backgroundImage: `url(${images[currentImage]})` }}
 		>
-			<nav className={styles.navBar}>
+			{/* <nav className={styles.navBar}>
 				<ul>
 					<li onClick={() => scrollToSection('section0')}>Top</li>
 					<li onClick={() => scrollToSection('section1')}>Section 1</li>
 					<li onClick={() => scrollToSection('section2')}>Section 2</li>
 					<li onClick={() => scrollToSection('section3')}>Section 3</li>
 				</ul>
-			</nav>
+			</nav> */}
 			<div id="section0" ref={sectionRefs.section0}>
 				<PromotionSection1 />
 			</div>

@@ -3,6 +3,7 @@ import styles from './styles/promotion.module.css';
 import Image from 'next/image';
 import logo1 from '../public/assets/logo/logo2.png';
 import Link from 'next/link';
+import ShareUniversity2 from '@/components/Copyright/ShareUniversity2';
 
 export default function PromotionLayout({ children }) {
 	return (
@@ -12,21 +13,15 @@ export default function PromotionLayout({ children }) {
 					<Image src={logo1} className={styles.logo1} alt="logo1" priority />
 				</div>
 				<div className={styles.headerCenterUniversity}>
-					<h2>부산대학</h2>
+					<h2>Busan!</h2>
 					<div className={styles.hiddenContainer}>
-						<div className={styles.linkTitle}>
-							<Link href="/lecture">동서대학교</Link>
-							<Link href="/">동서대학교</Link>
-							<Link href="/">동서대학교</Link>
-						</div>
+						<ShareUniversity2></ShareUniversity2>
 					</div>
 				</div>
 				<div className={styles.headerRightIcon}>
-					<div className={styles.icon1}>
-						<h3>마이페이지</h3>
-					</div>
+					<div className={styles.icon1}>{/* <h3>마이페이지</h3> */}</div>
 					<div className={styles.icon2}>
-						<h3>로그인</h3>
+						<h3>로그아웃</h3>
 					</div>
 				</div>
 			</nav>
